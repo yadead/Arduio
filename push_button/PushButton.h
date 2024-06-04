@@ -8,7 +8,7 @@ private:
   byte state;
 
 Public:
-  PushButton(){}
+  PushButton(){} // do not use
   PushButton(byte pin);
 
   void init();
