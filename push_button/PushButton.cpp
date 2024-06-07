@@ -1,18 +1,18 @@
 #include "PushButton.h"
 
-PushButton::PushButton(byte pin);
+PushButton::PushButton(byte pin)
 {
   this->pin = pin;
 }
 
-void PushButton::init();
+void PushButton::init()
 {
   pinMode(pin, INPUT_PULLUP);
-  readstate();
+  readState();
 }
 
-byte PushButton::readState();
+byte PushButton::readState()
 {
-  state = digitalReat(pin);
+  state = digitalRead (pin);
   return state;
 }
