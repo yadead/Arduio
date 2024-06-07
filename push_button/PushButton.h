@@ -9,9 +9,12 @@ private:
   byte pin;
   byte state;
 
+  bool isPullup;
+  bool internalPullUpActivated;
+
 public:
   PushButton() {} // do not use
-  PushButton(byte pin);
+  PushButton(byte pin, bool isPullup, bool internalPullUpActivated);
 
   void init();
   byte readState();

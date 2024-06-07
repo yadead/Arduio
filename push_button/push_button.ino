@@ -2,7 +2,7 @@
 
 #define BUTTON_PIN 2
 
-PushButton button(BUTTON_PIN);
+PushButton button(BUTTON_PIN, true, true);
 
 void setup() {
   Serial.begin(115200);
